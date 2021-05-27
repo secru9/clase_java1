@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class NumerosNaturales {
 
-    public static void calcular(int cantidadNumeros, int numeroDiguitos, int numRepetido){
+    public static void calcular(int cantidadNumeros, int numeroDigitos, int numRepetido){
         int contador = 0;
         int i = 1;
         while (contador < cantidadNumeros){
@@ -19,7 +19,7 @@ public class NumerosNaturales {
                 }
             }
 
-            if (contadorRepeticiones == numeroDiguitos){
+            if (contadorRepeticiones == numeroDigitos){
                 System.out.println(i);
                 contador++;
             }
@@ -32,11 +32,11 @@ public class NumerosNaturales {
         Scanner sc = new Scanner(System.in);
         System.out.println("Números naturales a mostrar");
         int cantidadNumeros = sc.nextInt();
-        System.out.println("Número de diguitos");
-        int numeroDiguitos = sc.nextInt();
+        System.out.println("Número de digitos");
+        int numeroDigitos = sc.nextInt();
         System.out.println("Número a repetir");
         int numRepetido = sc.nextInt();
-        calcular(cantidadNumeros, numeroDiguitos, numRepetido);
+        calcular(cantidadNumeros, numeroDigitos, numRepetido);
         sc.close();
     }
 }
